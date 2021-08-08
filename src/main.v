@@ -23,9 +23,45 @@
 module main(
     input wire clk,
     input wire rst,
-    input wire [1:0] sensor,
-    output reg [1:0] servo_instruction
+    input wire [0:0] sensor,
+    input wire [0:0] sw,
+
+//    output reg [1:0] servo_direction,
+    output wire [1:0] servo
     );
 
+// reg servo_direction_nxt;
+reg [1:0] servo_direction, servo_direction_nxt;
+
+localparam 
+    REST_STATE  = 2'b00,
+    LEFT_STATE  = 2'b01,
+    RIGHT_STATE = 2'b11;
+
+servo_handler my_servo (
+    .clk(clk),
+    .rst(rst),
+    .servo_direction(servo_direction),
+    .servo(servo)
+    );
+    
+always @(posedge clk) begin
+    if(rst) 
+        servo_direction <= 0;
+    else 
+        servo_direction <= servo_direction_nxt;
+end
+
+always @(*) begin
+    servo_direction_nxt = 0;
+    if(sw[0])
+        servo_direction_nxt = REST_STATE;
+    else begin
+        if(sensor[0])
+            servo_direction_nxt = LEFT_STATE;
+        else if(!sensor[0])
+            servo_direction_nxt = RIGHT_STATE;
+    end
+end
     
 endmodule
