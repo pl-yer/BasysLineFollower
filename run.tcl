@@ -41,7 +41,9 @@ read_xdc {
 
 read_verilog {
     src/main.v
-	src/servo_handler.v
+    src/servo_handler.v
+    src/input_control.v
+    src/PID_controller.v
 }
 #read_vhdl {}
 
@@ -65,5 +67,4 @@ if {[lindex $argv 0] == "simulation"} {
 
     launch_runs impl_1 -to_step write_bitstream -jobs 8
     wait_on_run impl_1
-    exit
 }

@@ -45,6 +45,16 @@ servo_handler my_servo (
     .servo(servo)
     );
     
+    PID_controller my_PID(
+    
+    );
+    
+    input_control my_in (
+    .a(clk),
+    .R_sensor(rst)
+    );
+    
+    
 always @(posedge clk) begin
     if(rst) 
         servo_direction <= 0;
