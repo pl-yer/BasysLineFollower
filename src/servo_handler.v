@@ -22,8 +22,10 @@
 
 module servo_handler(
     input wire clk,
-    input wire [1:0] servo_direction,
     input wire rst,
+    input wire [7:0] Wheel_Speed_R,
+    input wire [7:0] Wheel_Speed_L,
+    input wire [1:0] follower_state,
     output reg [1:0] servo
     );
 
@@ -76,7 +78,7 @@ always @(*) begin
     //     servo_nxt = 0;
     servo_nxt = (counter < ('d100000 + control)) ? 1 : 0;
     
-    case(servo_direction)
+    case(follower_state)
         REST_STATE: 
             control_nxt = GO_REST;
         LEFT_STATE:

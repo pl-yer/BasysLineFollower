@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Fri Aug 13 19:47:27 2021
+# Process ID: 12608
+# Current directory: C:/Users/rafal/Desktop/studia/UEC/line_follower/sim
+# Command line: vivado.exe -mode tcl -source run.tcl -tclargs bitstream
+# Log file: C:/Users/rafal/Desktop/studia/UEC/line_follower/sim/vivado.log
+# Journal file: C:/Users/rafal/Desktop/studia/UEC/line_follower/sim\vivado.jou
+#-----------------------------------------------------------
+source run.tcl

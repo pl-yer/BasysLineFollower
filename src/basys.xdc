@@ -206,11 +206,11 @@ set_property PACKAGE_PIN J1 [get_ports {sensor[0]}]
 
 ##Pmod Header JXADC
 #Sch name = XA1_P
-set_property PACKAGE_PIN J3 [get_ports {servo[0]}]				
-	set_property IOSTANDARD LVCMOS33 [get_ports {servo[0]}]
+set_property PACKAGE_PIN J3 [get_ports {servo_steering[0]}]				
+	set_property IOSTANDARD LVCMOS33 [get_ports {servo_steering[0]}]
 #Sch name = XA2_P
- set_property PACKAGE_PIN L3 [get_ports {servo[1]}]				
- 	set_property IOSTANDARD LVCMOS33 [get_ports {servo[1]}]
+ set_property PACKAGE_PIN L3 [get_ports {servo_steering[1]}]				
+ 	set_property IOSTANDARD LVCMOS33 [get_ports {servo_steering[1]}]
 # #Sch name = XA3_P
 # set_property PACKAGE_PIN M2 [get_ports {servo[2]}]				
 # 	set_property IOSTANDARD LVCMOS33 [get_ports {servo[2]}]

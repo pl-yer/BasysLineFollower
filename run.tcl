@@ -44,6 +44,7 @@ read_verilog {
     src/servo_handler.v
     src/input_control.v
     src/PID_controller.v
+    src/servo_to_PWM.v
 }
 #read_vhdl {}
 
