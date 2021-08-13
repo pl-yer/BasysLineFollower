@@ -25,4 +25,8 @@ module servo_to_PWM(
     output PWM_L,
     output PWM_R
     );
+    
+    assign PWM_L =0;
+    assign PWM_R =0;
+    
 endmodule

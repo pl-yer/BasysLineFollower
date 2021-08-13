@@ -26,7 +26,7 @@ module servo_handler(
     input wire [7:0] Wheel_Speed_R,
     input wire [7:0] Wheel_Speed_L,
     input wire [1:0] follower_state,
-    output reg [1:0] servo
+    output reg [7:0] servo
     );
 
 // 100MHz - board clock
