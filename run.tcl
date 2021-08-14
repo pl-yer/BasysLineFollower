@@ -48,7 +48,9 @@ read_verilog {
 }
 #read_vhdl {}
 
-#add_files -fileset sim_1 {}
+add_files -fileset sim_1 {
+    sim/PWM_sim.v
+}
 
 set_property top ${top_module} [current_fileset]
 update_compile_order -fileset sources_1
