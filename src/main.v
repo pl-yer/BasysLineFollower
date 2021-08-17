@@ -67,7 +67,9 @@ input_control my_in (
     
     
 servo_to_PWM my_PWM(
-    .servo(servo_signal),
+    .clk(clk),
+    .rst(rst),
+    .servo_L(servo_signal),
     .PWM_L(servo_steering[0]),
     .PWM_R(servo_steering[1])
 );

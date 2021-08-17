@@ -19,30 +19,42 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-
+//TODO
+// updating PWM only every 20ms time interval 
 module servo_to_PWM(
     input clk,
     input rst,
-    input [7:0] servo,
+    input  [10:0] servo_L,
+    input  [10:0] servo_R,
     output  reg PWM_L,
-    output wire PWM_R
+    output reg PWM_R
     );
     reg [20:0] counter =0;
-    reg [20:0] counter_nxt;
+    reg [20:0] servo_l_mul,servo_r_mul;
     
     always @ (posedge clk) begin
+     servo_l_mul =servo_L *2000;
+     servo_r_mul =servo_R *2000;
     counter = counter+1;
     if(counter > 2000000) begin
     counter=0;
     end
-    if(counter >1000000) begin
+    if(counter >servo_l_mul) begin
     PWM_L=0;
     end
     else begin
     PWM_L =1;
     end
+    if(counter >servo_r_mul) begin
+       PWM_R=0;
     end
-   // assign PWM_L =0;
-    assign PWM_R =0;
+    else begin
+       PWM_R =1;
+    end
+    end
     
+// always @* begin
+ // test <= servo_L *20000;
+ //end
+   
 endmodule
