@@ -34,6 +34,8 @@ module main(
     wire [7:0] Wheel_Speed_R;
     wire [7:0] Wheel_Speed_L;
     wire [7:0] servo_signal;
+    reg [9:0] a =130;
+    reg [9:0] b =130;
     
     
 localparam 
@@ -69,7 +71,8 @@ input_control my_in (
 servo_to_PWM my_PWM(
     .clk(clk),
     .rst(rst),
-    .servo_L(servo_signal),
+    .servo_L(a),
+    .servo_R(b),
     .PWM_L(servo_steering[0]),
     .PWM_R(servo_steering[1])
 );

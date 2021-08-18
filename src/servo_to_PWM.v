@@ -33,10 +33,10 @@ module servo_to_PWM(
     reg [20:0] servo_l_mul,servo_r_mul;
     
     always @ (posedge clk) begin
-     servo_l_mul =servo_L *2000;
-     servo_r_mul =servo_R *2000;
+     servo_l_mul =servo_L *1000;
+     servo_r_mul =servo_R *1000;
     counter = counter+1;
-    if(counter > 2000000) begin
+    if(counter > 1000000) begin
     counter=0;
     end
     if(counter >servo_l_mul) begin

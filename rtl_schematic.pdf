@@ -5,7 +5,7 @@
   /Author   (rafal)
   /Producer (Concept Engineering GmbH)
   /Creator  (Nlview 6.6.11  2017-06-12 bk=1.3860 VDI=40 GEI=35)
-  /CreationDate (D:20210817193858)
+  /CreationDate (D:20210818190158)
 >>
 endobj
 2 0 obj
@@ -653,7 +653,7 @@ BT
 /F1 10 Tf
 1 0 0 -1 0 0 Tm
 -60.59 2.07 Td
-(servo_L[20:0]) Tj
+(servo_L[10:0]) Tj
 ET
 Q
 1100 120 m
@@ -667,7 +667,7 @@ BT
 /F1 10 Tf
 1 0 0 -1 0 0 Tm
 -62.25 2.07 Td
-(servo_R[20:0]) Tj
+(servo_R[10:0]) Tj
 ET
 Q
 1 w
