@@ -24,12 +24,12 @@
 module servo_to_PWM(
     input clk,
     input rst,
-    input  [10:0] servo_L,
-    input  [10:0] servo_R,
+    input  [7:0] servo_L,
+    input  [7:0] servo_R,
     output  reg PWM_L,
     output reg PWM_R
     );
-    reg [20:0] counter =0;
+    reg [19:0] counter =0;
     reg [20:0] servo_l_mul,servo_r_mul;
     
     always @ (posedge clk) begin
@@ -39,7 +39,7 @@ module servo_to_PWM(
     if(counter > 1000000) begin
     counter=0;
     end
-    if(counter >servo_l_mul) begin
+    if(counter > servo_l_mul) begin
     PWM_L=0;
     end
     else begin
@@ -51,10 +51,5 @@ module servo_to_PWM(
     else begin
        PWM_R =1;
     end
-    end
-    
-// always @* begin
- // test <= servo_L *20000;
- //end
-   
+    end  
 endmodule

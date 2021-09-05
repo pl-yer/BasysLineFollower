@@ -5,7 +5,7 @@
   /Author   (rafal)
   /Producer (Concept Engineering GmbH)
   /Creator  (Nlview 6.6.11  2017-06-12 bk=1.3860 VDI=40 GEI=35)
-  /CreationDate (D:20210818190158)
+  /CreationDate (D:20210905205854)
 >>
 endobj
 2 0 obj
@@ -37,7 +37,7 @@ endobj
 endobj
 %
 % Nlview page 1
-% (user space scaling 0.470468)
+% (user space scaling 0.692177)
 %
 10 0 obj
 <<
@@ -51,21 +51,21 @@ endobj
 endobj
 11 0 obj
 <<
-  /Length 8486
+  /Length 8749
 >>
 stream
-1 0 0 1 0 213.687 cm
+1 0 0 1 0 173.373 cm
 1 0 0 1 28.8 28.8 cm
-0.470468 0 0 -0.470468 0 0 cm
-1 0 0 1 0 -270 cm
-0 0 1561 270 re
+0.692177 0 0 -0.692177 0 0 cm
+1 0 0 1 0 -300 cm
+0 0 1061 300 re
 W n
 /GS gs
-1 0 0 1 120 0 cm
+1 0 0 1 119 0 cm
 q
 1.000 1.000 1.000 rg
 /GSa0 gs
--120 0 1560 271 re
+-119 0 1060 301 re
 f
 Q
 [] 0 d
@@ -107,16 +107,16 @@ BT
 ET
 Q
 3 w
-0 160 m
--7 167 l
--21 167 l
--21 153 l
--7 153 l
+0 150 m
+-7 157 l
+-21 157 l
+-21 143 l
+-7 143 l
 h S
 q
 0.000 0.000 0.000 rg
 /GSa0 gs
-1 0 0 1 -25 160 cm
+1 0 0 1 -25 150 cm
 BT
 /F1 12 Tf
 1 0 0 -1 0 0 Tm
@@ -125,307 +125,151 @@ BT
 ET
 Q
 q
-0.875 0.922 0.973 rg
+1.000 1.000 0.800 rg
 /GSa0 gs
-110 128 60 62 re
-f
+60 150 m
+60 138 l
+90 150 l
+60 162 l
+h f
 Q
 1 w
-110 128 60 62 re
-S
-q
-1 0 0 1 121 139 cm
-1 0 0 1 -8 -8 cm
-16 0 0 -16 0 16 cm /Im0 Do
-Q
+60 150 m
+60 138 l
+90 150 l
+60 162 l
+h S
 q
 0.000 0.000 0.000 rg
 /GSa0 gs
-1 0 0 1 140 126 cm
+1 0 0 1 62 136 cm
 BT
 /F1 12 Tf
 1 0 0 -1 0 0 Tm
--16.002 2.484 Td
-(my_in) Tj
+0 2.484 Td
+(sensor[0]_IBUF_inst) Tj
 ET
 Q
 q
 0.000 0.000 0.000 rg
 /GSa0 gs
-1 0 0 1 140 192 cm
+1 0 0 1 62 164 cm
 BT
 /F1 12 Tf
 1 0 0 -1 0 0 Tm
--34.35 -8.616 Td
-(input_control) Tj
+0 -8.616 Td
+(IBUF) Tj
 ET
 Q
-100 160 m
-110 160 l
+100 150 m
+90 150 l
 S
 q
 0.000 0.000 0.000 rg
 /GSa0 gs
-1 0 0 1 108 159 cm
-BT
-/F1 10 Tf
-1 0 0 -1 0 0 Tm
--42.79 2.07 Td
-(R_sensor) Tj
-ET
-Q
-100 180 m
-110 180 l
-S
-q
-0.000 0.000 0.000 rg
-/GSa0 gs
-1 0 0 1 108 179 cm
-BT
-/F1 10 Tf
-1 0 0 -1 0 0 Tm
--5.56 2.07 Td
-(a) Tj
-ET
-Q
-3 w
-180 160 m
-170 160 l
-S
-q
-0.000 0.000 0.000 rg
-/GSa0 gs
-1 0 0 1 172 159 cm
+1 0 0 1 92 149 cm
 BT
 /F1 10 Tf
 1 0 0 -1 0 0 Tm
 0 2.07 Td
-(follower_state[1:0]) Tj
+(O) Tj
 ET
 Q
-180 180 m
-170 180 l
+50 150 m
+60 150 l
 S
 q
 0.000 0.000 0.000 rg
 /GSa0 gs
-1 0 0 1 172 179 cm
+1 0 0 1 58 149 cm
 BT
 /F1 10 Tf
 1 0 0 -1 0 0 Tm
-0 2.07 Td
-(sensors_signal[1:0]) Tj
+-2.78 2.07 Td
+(I) Tj
 ET
 Q
-1 w
-120 160 m
-110 160 l
-S
-120 180 m
-110 180 l
-S
-3 w
-160 160 m
-170 160 l
-S
-160 180 m
-170 180 l
-S
 q
 1.000 1.000 0.800 rg
 /GSa0 gs
-360 110 250 100 re
-f
+60 220 m
+60 208 l
+90 220 l
+60 232 l
+h f
 Q
-1 w
-360 110 250 100 re
-S
+60 220 m
+60 208 l
+90 220 l
+60 232 l
+h S
 q
 0.000 0.000 0.000 rg
 /GSa0 gs
-1 0 0 1 485 108 cm
+1 0 0 1 62 206 cm
 BT
 /F1 12 Tf
 1 0 0 -1 0 0 Tm
--21.336 2.484 Td
-(my_PID) Tj
+0 2.484 Td
+(sensor[1]_IBUF_inst) Tj
 ET
 Q
 q
 0.000 0.000 0.000 rg
 /GSa0 gs
-1 0 0 1 485 212 cm
+1 0 0 1 62 234 cm
 BT
 /F1 12 Tf
 1 0 0 -1 0 0 Tm
--38.01 -8.616 Td
-(PID_controller) Tj
+0 -8.616 Td
+(IBUF) Tj
 ET
 Q
-350 120 m
-360 120 l
+100 220 m
+90 220 l
 S
 q
 0.000 0.000 0.000 rg
 /GSa0 gs
-1 0 0 1 362 120 cm
+1 0 0 1 92 219 cm
 BT
 /F1 10 Tf
 1 0 0 -1 0 0 Tm
-0 -3.59 Td
-(clk) Tj
+0 2.07 Td
+(O) Tj
 ET
 Q
-q
-0.000 0.000 0.000 rg
-/GSa0 gs
-1 0 0 1 358 119 cm
-BT
-/F1 8 Tf
-1 0 0 -1 0 0 Tm
--10.672 1.656 Td
-(n/c) Tj
-ET
-Q
-350 160 m
-360 160 l
+50 220 m
+60 220 l
 S
 q
 0.000 0.000 0.000 rg
 /GSa0 gs
-1 0 0 1 362 160 cm
+1 0 0 1 58 219 cm
 BT
 /F1 10 Tf
 1 0 0 -1 0 0 Tm
-0 -3.59 Td
-(rst) Tj
-ET
-Q
-q
-0.000 0.000 0.000 rg
-/GSa0 gs
-1 0 0 1 358 159 cm
-BT
-/F1 8 Tf
-1 0 0 -1 0 0 Tm
--10.672 1.656 Td
-(n/c) Tj
-ET
-Q
-3 w
-620 140 m
-610 140 l
-S
-q
-0.000 0.000 0.000 rg
-/GSa0 gs
-1 0 0 1 608 140 cm
-BT
-/F1 10 Tf
-1 0 0 -1 0 0 Tm
--93.39 -3.59 Td
-(Wheel_Speed_L[7:0]) Tj
-ET
-Q
-620 160 m
-610 160 l
-S
-q
-0.000 0.000 0.000 rg
-/GSa0 gs
-1 0 0 1 608 160 cm
-BT
-/F1 10 Tf
-1 0 0 -1 0 0 Tm
--95.05 -3.59 Td
-(Wheel_Speed_R[7:0]) Tj
-ET
-Q
-350 140 m
-360 140 l
-S
-q
-0.000 0.000 0.000 rg
-/GSa0 gs
-1 0 0 1 362 140 cm
-BT
-/F1 10 Tf
-1 0 0 -1 0 0 Tm
-0 -3.59 Td
-(follower_state[1:0]) Tj
-ET
-Q
-350 180 m
-360 180 l
-S
-q
-0.000 0.000 0.000 rg
-/GSa0 gs
-1 0 0 1 362 180 cm
-BT
-/F1 10 Tf
-1 0 0 -1 0 0 Tm
-0 -3.59 Td
-(sensors_signal[1:0]) Tj
-ET
-Q
-350 200 m
-360 200 l
-S
-q
-0.000 0.000 0.000 rg
-/GSa0 gs
-1 0 0 1 362 200 cm
-BT
-/F1 10 Tf
-1 0 0 -1 0 0 Tm
-0 -3.59 Td
-(servo_signal[7:0]) Tj
-ET
-Q
-620 180 m
-610 180 l
-S
-q
-0.000 0.000 0.000 rg
-/GSa0 gs
-1 0 0 1 608 180 cm
-BT
-/F1 10 Tf
-1 0 0 -1 0 0 Tm
--73.37 -3.59 Td
-(steer_signal[1:0]) Tj
-ET
-Q
-q
-0.000 0.000 0.000 rg
-/GSa0 gs
-1 0 0 1 612 179 cm
-BT
-/F1 8 Tf
-1 0 0 -1 0 0 Tm
-0 1.656 Td
-(n/c) Tj
+-2.78 2.07 Td
+(I) Tj
 ET
 Q
 q
 0.875 0.922 0.973 rg
 /GSa0 gs
-830 108 60 122 re
+370 108 60 82 re
 f
 Q
-1 w
-830 108 60 122 re
+370 108 60 82 re
 S
 q
-1 0 0 1 841 119 cm
+1 0 0 1 381 119 cm
 1 0 0 1 -8 -8 cm
 16 0 0 -16 0 16 cm /Im0 Do
 Q
 q
 0.000 0.000 0.000 rg
 /GSa0 gs
-1 0 0 1 860 106 cm
+1 0 0 1 400 106 cm
 BT
 /F1 12 Tf
 1 0 0 -1 0 0 Tm
@@ -436,7 +280,7 @@ Q
 q
 0.000 0.000 0.000 rg
 /GSa0 gs
-1 0 0 1 860 232 cm
+1 0 0 1 400 192 cm
 BT
 /F1 12 Tf
 1 0 0 -1 0 0 Tm
@@ -444,13 +288,13 @@ BT
 (servo_handler) Tj
 ET
 Q
-820 180 m
-830 180 l
+360 140 m
+370 140 l
 S
 q
 0.000 0.000 0.000 rg
 /GSa0 gs
-1 0 0 1 828 179 cm
+1 0 0 1 368 139 cm
 BT
 /F1 10 Tf
 1 0 0 -1 0 0 Tm
@@ -458,13 +302,13 @@ BT
 (clk) Tj
 ET
 Q
-820 220 m
-830 220 l
+360 160 m
+370 160 l
 S
 q
 0.000 0.000 0.000 rg
 /GSa0 gs
-1 0 0 1 828 219 cm
+1 0 0 1 368 159 cm
 BT
 /F1 10 Tf
 1 0 0 -1 0 0 Tm
@@ -473,100 +317,83 @@ BT
 ET
 Q
 3 w
-820 140 m
-830 140 l
+360 180 m
+370 180 l
 S
 q
 0.000 0.000 0.000 rg
 /GSa0 gs
-1 0 0 1 828 139 cm
+1 0 0 1 368 179 cm
 BT
 /F1 10 Tf
 1 0 0 -1 0 0 Tm
--93.39 2.07 Td
-(Wheel_Speed_L[7:0]) Tj
+-54.47 2.07 Td
+(sensors[1:0]) Tj
 ET
 Q
-820 160 m
-830 160 l
+440 140 m
+430 140 l
 S
 q
 0.000 0.000 0.000 rg
 /GSa0 gs
-1 0 0 1 828 159 cm
-BT
-/F1 10 Tf
-1 0 0 -1 0 0 Tm
--95.05 2.07 Td
-(Wheel_Speed_R[7:0]) Tj
-ET
-Q
-820 200 m
-830 200 l
-S
-q
-0.000 0.000 0.000 rg
-/GSa0 gs
-1 0 0 1 828 199 cm
-BT
-/F1 10 Tf
-1 0 0 -1 0 0 Tm
--81.15 2.07 Td
-(follower_state[1:0]) Tj
-ET
-Q
-900 180 m
-890 180 l
-S
-q
-0.000 0.000 0.000 rg
-/GSa0 gs
-1 0 0 1 892 179 cm
+1 0 0 1 432 139 cm
 BT
 /F1 10 Tf
 1 0 0 -1 0 0 Tm
 0 2.07 Td
-(servo[7:0]) Tj
+(servo_l[7:0]) Tj
+ET
+Q
+440 160 m
+430 160 l
+S
+q
+0.000 0.000 0.000 rg
+/GSa0 gs
+1 0 0 1 432 159 cm
+BT
+/F1 10 Tf
+1 0 0 -1 0 0 Tm
+0 2.07 Td
+(servo_r[7:0]) Tj
 ET
 Q
 1 w
-840 180 m
-830 180 l
+380 140 m
+370 140 l
 S
-840 220 m
-830 220 l
+380 160 m
+370 160 l
 S
 3 w
-840 140 m
-830 140 l
+380 180 m
+370 180 l
 S
-840 160 m
-830 160 l
+420 140 m
+430 140 l
 S
-840 200 m
-830 200 l
-S
-880 180 m
-890 180 l
+420 160 m
+430 160 l
 S
 q
 0.875 0.922 0.973 rg
 /GSa0 gs
-1110 28 60 102 re
+660 28 60 102 re
 f
 Q
 1 w
-1110 28 60 102 re
+660 28 60 102 re
 S
 q
-1 0 0 1 1121 39 cm
+1 0 0 1 671 39 cm
 1 0 0 1 -8 -8 cm
 16 0 0 -16 0 16 cm /Im0 Do
 Q
 q
 0.000 0.000 0.000 rg
 /GSa0 gs
-1 0 0 1 1140 26 cm
+1 0 0 1 690 26 cm
 BT
 /F1 12 Tf
 1 0 0 -1 0 0 Tm
@@ -577,7 +404,7 @@ Q
 q
 0.000 0.000 0.000 rg
 /GSa0 gs
-1 0 0 1 1140 132 cm
+1 0 0 1 690 132 cm
 BT
 /F1 12 Tf
 1 0 0 -1 0 0 Tm
@@ -585,13 +412,13 @@ BT
 (servo_to_PWM) Tj
 ET
 Q
-1180 80 m
-1170 80 l
+730 80 m
+720 80 l
 S
 q
 0.000 0.000 0.000 rg
 /GSa0 gs
-1 0 0 1 1172 79 cm
+1 0 0 1 722 79 cm
 BT
 /F1 10 Tf
 1 0 0 -1 0 0 Tm
@@ -599,13 +426,13 @@ BT
 (PWM_L) Tj
 ET
 Q
-1180 100 m
-1170 100 l
+730 100 m
+720 100 l
 S
 q
 0.000 0.000 0.000 rg
 /GSa0 gs
-1 0 0 1 1172 99 cm
+1 0 0 1 722 99 cm
 BT
 /F1 10 Tf
 1 0 0 -1 0 0 Tm
@@ -613,13 +440,13 @@ BT
 (PWM_R) Tj
 ET
 Q
-1100 60 m
-1110 60 l
+650 60 m
+660 60 l
 S
 q
 0.000 0.000 0.000 rg
 /GSa0 gs
-1 0 0 1 1108 59 cm
+1 0 0 1 658 59 cm
 BT
 /F1 10 Tf
 1 0 0 -1 0 0 Tm
@@ -627,13 +454,13 @@ BT
 (clk) Tj
 ET
 Q
-1100 80 m
-1110 80 l
+650 80 m
+660 80 l
 S
 q
 0.000 0.000 0.000 rg
 /GSa0 gs
-1 0 0 1 1108 79 cm
+1 0 0 1 658 79 cm
 BT
 /F1 10 Tf
 1 0 0 -1 0 0 Tm
@@ -642,290 +469,436 @@ BT
 ET
 Q
 3 w
-1100 100 m
-1110 100 l
+650 100 m
+660 100 l
 S
 q
 0.000 0.000 0.000 rg
 /GSa0 gs
-1 0 0 1 1108 99 cm
+1 0 0 1 658 99 cm
 BT
 /F1 10 Tf
 1 0 0 -1 0 0 Tm
--60.59 2.07 Td
-(servo_L[10:0]) Tj
+-55.03 2.07 Td
+(servo_L[7:0]) Tj
 ET
 Q
-1100 120 m
-1110 120 l
+650 120 m
+660 120 l
 S
 q
 0.000 0.000 0.000 rg
 /GSa0 gs
-1 0 0 1 1108 119 cm
+1 0 0 1 658 119 cm
 BT
 /F1 10 Tf
 1 0 0 -1 0 0 Tm
--62.25 2.07 Td
-(servo_R[10:0]) Tj
+-56.69 2.07 Td
+(servo_R[7:0]) Tj
 ET
 Q
 1 w
-1160 80 m
-1170 80 l
+710 80 m
+720 80 l
 S
-1160 100 m
-1170 100 l
+710 100 m
+720 100 l
 S
-1120 60 m
-1110 60 l
+670 60 m
+660 60 l
 S
-1120 80 m
-1110 80 l
+670 80 m
+660 80 l
 S
 3 w
-1120 100 m
-1110 100 l
+670 100 m
+660 100 l
 S
-1120 120 m
-1110 120 l
+670 120 m
+660 120 l
 S
+q
+1.000 1.000 0.800 rg
+/GSa0 gs
+660 190 m
+660 178 l
+690 190 l
+660 202 l
+h f
+Q
 1 w
-992 160 m
-1008 160 l
-S
-995 163 m
-1005 163 l
-S
-998 166 m
-1002 166 l
-S
-3 w
-1270 80 m
-1270 73 l
-1284 73 l
-1291 80 l
-1284 87 l
-1270 87 l
+660 190 m
+660 178 l
+690 190 l
+660 202 l
 h S
 q
 0.000 0.000 0.000 rg
 /GSa0 gs
-1 0 0 1 1295 80 cm
+1 0 0 1 662 176 cm
+BT
+/F1 12 Tf
+1 0 0 -1 0 0 Tm
+0 2.484 Td
+(led[0]_OBUF_inst) Tj
+ET
+Q
+q
+0.000 0.000 0.000 rg
+/GSa0 gs
+1 0 0 1 662 204 cm
+BT
+/F1 12 Tf
+1 0 0 -1 0 0 Tm
+0 -8.616 Td
+(OBUF) Tj
+ET
+Q
+700 190 m
+690 190 l
+S
+q
+0.000 0.000 0.000 rg
+/GSa0 gs
+1 0 0 1 692 189 cm
+BT
+/F1 10 Tf
+1 0 0 -1 0 0 Tm
+0 2.07 Td
+(O) Tj
+ET
+Q
+650 190 m
+660 190 l
+S
+q
+0.000 0.000 0.000 rg
+/GSa0 gs
+1 0 0 1 658 189 cm
+BT
+/F1 10 Tf
+1 0 0 -1 0 0 Tm
+-2.78 2.07 Td
+(I) Tj
+ET
+Q
+q
+1.000 1.000 0.800 rg
+/GSa0 gs
+660 260 m
+660 248 l
+690 260 l
+660 272 l
+h f
+Q
+660 260 m
+660 248 l
+690 260 l
+660 272 l
+h S
+q
+0.000 0.000 0.000 rg
+/GSa0 gs
+1 0 0 1 662 246 cm
+BT
+/F1 12 Tf
+1 0 0 -1 0 0 Tm
+0 2.484 Td
+(led[1]_OBUF_inst) Tj
+ET
+Q
+q
+0.000 0.000 0.000 rg
+/GSa0 gs
+1 0 0 1 662 274 cm
+BT
+/F1 12 Tf
+1 0 0 -1 0 0 Tm
+0 -8.616 Td
+(OBUF) Tj
+ET
+Q
+700 260 m
+690 260 l
+S
+q
+0.000 0.000 0.000 rg
+/GSa0 gs
+1 0 0 1 692 259 cm
+BT
+/F1 10 Tf
+1 0 0 -1 0 0 Tm
+0 2.07 Td
+(O) Tj
+ET
+Q
+650 260 m
+660 260 l
+S
+q
+0.000 0.000 0.000 rg
+/GSa0 gs
+1 0 0 1 658 259 cm
+BT
+/F1 10 Tf
+1 0 0 -1 0 0 Tm
+-2.78 2.07 Td
+(I) Tj
+ET
+Q
+3 w
+830 80 m
+830 73 l
+844 73 l
+851 80 l
+844 87 l
+830 87 l
+h S
+q
+0.000 0.000 0.000 rg
+/GSa0 gs
+1 0 0 1 855 80 cm
 BT
 /F1 12 Tf
 1 0 0 -1 0 0 Tm
 0 -4.308 Td
-(servo_steering[1:0]) Tj
+(servo[1:0]) Tj
 ET
 Q
-0 20 m
--7 27 l
--21 27 l
--21 13 l
--7 13 l
+830 190 m
+830 183 l
+844 183 l
+851 190 l
+844 197 l
+830 197 l
 h S
 q
 0.000 0.000 0.000 rg
 /GSa0 gs
-1 0 0 1 -25 20 cm
+1 0 0 1 855 190 cm
 BT
 /F1 12 Tf
 1 0 0 -1 0 0 Tm
--38.016 -4.308 Td
-(sw[1:0]) Tj
+0 -4.308 Td
+(led[1:0]) Tj
 ET
 Q
-2 w
-0.098 0.706 0.000 RG
-1100 100 m
-1005 100 l
-S
-1 w
-0.000 0.000 0.000 RG
-1005 100 m
-1000 105 l
-S
-0.098 0.706 0.000 RG
-1000 105 m
-1000 160 l
-S
-1000 120 m
-1100 120 l
-S
-q
-0.098 0.706 0.000 rg
-/GSa0 gs
-998 118 5 5 re
-f
-Q
-3 w
 0.000 0.502 0.000 RG
-620 140 m
-820 140 l
+440 140 m
+530 140 l
+530 100 l
+650 100 l
 S
-620 160 m
-820 160 l
+440 160 m
+550 160 l
+550 120 l
+650 120 l
 S
-20 157 m
-20 183 l
+810 187 m
+810 263 l
 S
-0 160 m
-20 160 l
+810 190 m
+830 190 l
 S
 1 w
 0.098 0.706 0.000 RG
-20 160 m
-100 160 l
+700 190 m
+810 190 l
 S
-20 180 m
-100 180 l
+700 260 m
+810 260 l
 S
 3 w
 0.000 0.000 0.000 RG
 q
 0.000 0.000 0.000 rg
 /GSa0 gs
-19 155 m
-19 165 l
-30 160 l
+811 185 m
+811 195 l
+800 190 l
 f
 Q
 q
 0.000 0.000 0.000 rg
 /GSa0 gs
-19 175 m
-19 185 l
-30 180 l
+811 255 m
+811 265 l
+800 260 l
 f
 Q
 0.000 0.502 0.000 RG
-180 180 m
-350 180 l
+20 147 m
+20 223 l
 S
-350 200 m
-310 200 l
-310 260 l
-980 260 l
-980 105 l
+0 150 m
+20 150 l
 S
-0.000 0.000 0.000 RG
-980 105 m
-985 100 l
-S
+1 w
 0.098 0.706 0.000 RG
-985 100 m
-1100 100 l
+20 150 m
+50 150 l
 S
+20 220 m
+50 220 l
+S
+3 w
+0.000 0.000 0.000 RG
+q
+0.000 0.000 0.000 rg
+/GSa0 gs
+19 145 m
+19 155 l
+30 150 l
+f
+Q
+q
+0.000 0.000 0.000 rg
+/GSa0 gs
+19 215 m
+19 225 l
+30 220 l
+f
+Q
 0.000 0.502 0.000 RG
-900 180 m
-980 180 l
+230 147 m
+230 223 l
+S
+230 180 m
+360 180 l
+S
+230 220 m
+530 220 l
 S
 q
 0.000 0.502 0.000 rg
 /GSa0 gs
-977 177 7 7 re
+527 217 7 7 re
 f
 Q
-1250 77 m
-1250 103 l
-S
-1250 80 m
-1270 80 l
+q
+0.000 0.502 0.000 rg
+/GSa0 gs
+227 177 7 7 re
+f
+Q
+530 187 m
+530 263 l
 S
 1 w
 0.098 0.706 0.000 RG
-1180 80 m
-1250 80 l
+100 150 m
+230 150 l
 S
-1180 100 m
-1250 100 l
+100 220 m
+230 220 l
+S
+530 260 m
+650 260 l
+S
+530 190 m
+650 190 l
 S
 3 w
 0.000 0.000 0.000 RG
 q
 0.000 0.000 0.000 rg
 /GSa0 gs
-1251 75 m
-1251 85 l
-1240 80 l
+529 185 m
+529 195 l
+540 190 l
 f
 Q
 q
 0.000 0.000 0.000 rg
 /GSa0 gs
-1251 95 m
-1251 105 l
-1240 100 l
+529 255 m
+529 265 l
+540 260 l
+f
+Q
+q
+0.000 0.000 0.000 rg
+/GSa0 gs
+231 145 m
+231 155 l
+220 150 l
+f
+Q
+q
+0.000 0.000 0.000 rg
+/GSa0 gs
+231 215 m
+231 225 l
+220 220 l
+f
+Q
+0.000 0.502 0.000 RG
+810 77 m
+810 103 l
+S
+810 80 m
+830 80 l
+S
+1 w
+0.098 0.706 0.000 RG
+730 80 m
+810 80 l
+S
+730 100 m
+810 100 l
+S
+3 w
+0.000 0.000 0.000 RG
+q
+0.000 0.000 0.000 rg
+/GSa0 gs
+811 75 m
+811 85 l
+800 80 l
+f
+Q
+q
+0.000 0.000 0.000 rg
+/GSa0 gs
+811 95 m
+811 105 l
+800 100 l
 f
 Q
 1 w
 0.098 0.706 0.000 RG
 0 60 m
-680 60 l
-680 180 l
-820 180 l
+270 60 l
+270 140 l
+360 140 l
 S
-680 60 m
-1100 60 l
+270 60 m
+650 60 l
 S
 q
 0.098 0.706 0.000 rg
 /GSa0 gs
-678 58 5 5 re
+268 58 5 5 re
 f
 Q
 0 80 m
-660 80 l
-660 220 l
-820 220 l
+250 80 l
+250 160 l
+360 160 l
 S
-660 80 m
-1100 80 l
+250 80 m
+650 80 l
 S
 q
 0.098 0.706 0.000 rg
 /GSa0 gs
-658 78 5 5 re
+248 78 5 5 re
 f
 Q
 q
 0.000 0.000 0.000 rg
 /GSa0 gs
-1 0 0 1 26 159 cm
-BT
-/F1 8 Tf
-1 0 0 -1 0 0 Tm
-0 1.656 Td
-(1) Tj
-ET
-Q
-q
-0.000 0.000 0.000 rg
-/GSa0 gs
-1 0 0 1 26 179 cm
-BT
-/F1 8 Tf
-1 0 0 -1 0 0 Tm
-0 1.656 Td
-(0) Tj
-ET
-Q
-q
-0.000 0.000 0.000 rg
-/GSa0 gs
-1 0 0 1 985 101 cm
-BT
-/F1 8 Tf
-1 0 0 -1 0 0 Tm
-0 -5.744 Td
-(7:0) Tj
-ET
-Q
-q
-0.000 0.000 0.000 rg
-/GSa0 gs
-1 0 0 1 1245 79 cm
+1 0 0 1 805 189 cm
 BT
 /F1 8 Tf
 1 0 0 -1 0 0 Tm
@@ -936,7 +909,95 @@ Q
 q
 0.000 0.000 0.000 rg
 /GSa0 gs
-1 0 0 1 1245 99 cm
+1 0 0 1 805 259 cm
+BT
+/F1 8 Tf
+1 0 0 -1 0 0 Tm
+-4.448 1.656 Td
+(1) Tj
+ET
+Q
+q
+0.000 0.000 0.000 rg
+/GSa0 gs
+1 0 0 1 26 149 cm
+BT
+/F1 8 Tf
+1 0 0 -1 0 0 Tm
+0 1.656 Td
+(0) Tj
+ET
+Q
+q
+0.000 0.000 0.000 rg
+/GSa0 gs
+1 0 0 1 26 219 cm
+BT
+/F1 8 Tf
+1 0 0 -1 0 0 Tm
+0 1.656 Td
+(1) Tj
+ET
+Q
+q
+0.000 0.000 0.000 rg
+/GSa0 gs
+1 0 0 1 225 149 cm
+BT
+/F1 8 Tf
+1 0 0 -1 0 0 Tm
+-4.448 1.656 Td
+(0) Tj
+ET
+Q
+q
+0.000 0.000 0.000 rg
+/GSa0 gs
+1 0 0 1 225 219 cm
+BT
+/F1 8 Tf
+1 0 0 -1 0 0 Tm
+-4.448 1.656 Td
+(1) Tj
+ET
+Q
+q
+0.000 0.000 0.000 rg
+/GSa0 gs
+1 0 0 1 536 189 cm
+BT
+/F1 8 Tf
+1 0 0 -1 0 0 Tm
+0 1.656 Td
+(0) Tj
+ET
+Q
+q
+0.000 0.000 0.000 rg
+/GSa0 gs
+1 0 0 1 536 259 cm
+BT
+/F1 8 Tf
+1 0 0 -1 0 0 Tm
+0 1.656 Td
+(1) Tj
+ET
+Q
+q
+0.000 0.000 0.000 rg
+/GSa0 gs
+1 0 0 1 805 79 cm
+BT
+/F1 8 Tf
+1 0 0 -1 0 0 Tm
+-4.448 1.656 Td
+(0) Tj
+ET
+Q
+q
+0.000 0.000 0.000 rg
+/GSa0 gs
+1 0 0 1 805 99 cm
 BT
 /F1 8 Tf
 1 0 0 -1 0 0 Tm
@@ -974,18 +1035,18 @@ endobj
 endobj
 15 0 obj
 <<
-  /Title  (my_PID PID_controller)
+  /Title  (led[0]_OBUF_inst OBUF)
   /C      [0.0 0.0 0.4]
-  /Dest   [10 0 R /FitR 248 263 377 324]
+  /Dest   [10 0 R /FitR 561 259 634 297]
   /Parent 14 0 R
   /Next   16 0 R
 >>
 endobj
 16 0 obj
 <<
-  /Title  (my_PWM servo_to_PWM)
+  /Title  (led[1]_OBUF_inst OBUF)
   /C      [0.0 0.0 0.4]
-  /Dest   [10 0 R /FitR 577 301 654 363]
+  /Dest   [10 0 R /FitR 561 211 634 248]
   /Parent 14 0 R
   /Prev   15 0 R
   /Next   17 0 R
@@ -993,9 +1054,9 @@ endobj
 endobj
 17 0 obj
 <<
-  /Title  (my_in input_control)
+  /Title  (my_PWM servo_to_PWM)
   /C      [0.0 0.0 0.4]
-  /Dest   [10 0 R /FitR 116 273 206 316]
+  /Dest   [10 0 R /FitR 527 309 636 400]
   /Parent 14 0 R
   /Prev   16 0 R
   /Next   18 0 R
@@ -1005,9 +1066,29 @@ endobj
 <<
   /Title  (my_servo servo_handler)
   /C      [0.0 0.0 0.4]
-  /Dest   [10 0 R /FitR 430 254 525 325]
+  /Dest   [10 0 R /FitR 328 267 446 345]
   /Parent 14 0 R
   /Prev   17 0 R
+  /Next   19 0 R
+>>
+endobj
+19 0 obj
+<<
+  /Title  (sensor[0]_IBUF_inst IBUF)
+  /C      [0.0 0.0 0.4]
+  /Dest   [10 0 R /FitR 145 287 228 324]
+  /Parent 14 0 R
+  /Prev   18 0 R
+  /Next   20 0 R
+>>
+endobj
+20 0 obj
+<<
+  /Title  (sensor[1]_IBUF_inst IBUF)
+  /C      [0.0 0.0 0.4]
+  /Dest   [10 0 R /FitR 145 238 228 276]
+  /Parent 14 0 R
+  /Prev   19 0 R
 >>
 endobj
 14 0 obj
@@ -1017,222 +1098,222 @@ endobj
   /F      1
   /Parent 13 0 R
   /First  15 0 R
-  /Last   18 0 R
-  /Count  4
-  /Next   19 0 R
->>
-endobj
-20 0 obj
-<<
-  /Title  (clk input)
-  /C      [0.0 0.0 0.4]
-  /Dest   [10 0 R /FitR 66 337 85 345]
-  /Parent 19 0 R
+  /Last   20 0 R
+  /Count  6
   /Next   21 0 R
 >>
 endobj
-21 0 obj
+22 0 obj
+<<
+  /Title  (clk input)
+  /C      [0.0 0.0 0.4]
+  /Dest   [10 0 R /FitR 84 362 111 373]
+  /Parent 21 0 R
+  /Next   23 0 R
+>>
+endobj
+23 0 obj
 <<
   /Title  (rst input)
   /C      [0.0 0.0 0.4]
-  /Dest   [10 0 R /FitR 67 328 85 335]
-  /Parent 19 0 R
-  /Prev   20 0 R
+  /Dest   [10 0 R /FitR 84 348 111 359]
+  /Parent 21 0 R
+  /Prev   22 0 R
 >>
 endobj
-19 0 obj
+21 0 obj
 <<
   /Title  (ports)
   /C      [0.0 0.4 0.0]
   /F      1
   /Parent 13 0 R
-  /First  20 0 R
-  /Last   21 0 R
+  /First  22 0 R
+  /Last   23 0 R
   /Count  2
   /Prev   14 0 R
-  /Next   22 0 R
->>
-endobj
-23 0 obj
-<<
-  /Title  (sensor input)
-  /C      [0.0 0.0 0.4]
-  /Dest   [10 0 R /FitR 45 289 86 298]
-  /Parent 22 0 R
   /Next   24 0 R
->>
-endobj
-24 0 obj
-<<
-  /Title  (servo_steering output)
-  /C      [0.0 0.0 0.4]
-  /Dest   [10 0 R /FitR 681 327 742 336]
-  /Parent 22 0 R
-  /Prev   23 0 R
-  /Next   25 0 R
 >>
 endobj
 25 0 obj
 <<
-  /Title  (sw input)
+  /Title  (led output)
   /C      [0.0 0.0 0.4]
-  /Dest   [10 0 R /FitR 55 355 86 364]
-  /Parent 22 0 R
-  /Prev   24 0 R
+  /Dest   [10 0 R /FitR 683 271 729 285]
+  /Parent 24 0 R
+  /Next   26 0 R
 >>
 endobj
-22 0 obj
+26 0 obj
+<<
+  /Title  (sensor input)
+  /C      [0.0 0.0 0.4]
+  /Dest   [10 0 R /FitR 53 299 113 312]
+  /Parent 24 0 R
+  /Prev   25 0 R
+  /Next   27 0 R
+>>
+endobj
+27 0 obj
+<<
+  /Title  (servo output)
+  /C      [0.0 0.0 0.4]
+  /Dest   [10 0 R /FitR 683 347 738 361]
+  /Parent 24 0 R
+  /Prev   26 0 R
+>>
+endobj
+24 0 obj
 <<
   /Title  (portBuses)
   /C      [0.0 0.4 0.0]
   /F      1
   /Parent 13 0 R
-  /First  23 0 R
-  /Last   25 0 R
+  /First  25 0 R
+  /Last   27 0 R
   /Count  3
-  /Prev   19 0 R
-  /Next   26 0 R
->>
-endobj
-27 0 obj
-<<
-  /Title  (<const0>)
-  /C      [0.0 0.0 0.4]
-  /Dest   [10 0 R /FitR 554 294 602 322]
-  /Parent 26 0 R
+  /Prev   21 0 R
   /Next   28 0 R
->>
-endobj
-28 0 obj
-<<
-  /Title  (clk)
-  /C      [0.0 0.0 0.4]
-  /Dest   [10 0 R /FitR 84 284 602 342]
-  /Parent 26 0 R
-  /Prev   27 0 R
-  /Next   29 0 R
 >>
 endobj
 29 0 obj
 <<
-  /Title  (rst)
+  /Title  (clk)
   /C      [0.0 0.0 0.4]
-  /Dest   [10 0 R /FitR 84 265 602 332]
-  /Parent 26 0 R
-  /Prev   28 0 R
+  /Dest   [10 0 R /FitR 110 312 561 369]
+  /Parent 28 0 R
+  /Next   30 0 R
 >>
 endobj
-26 0 obj
+30 0 obj
+<<
+  /Title  (rst)
+  /C      [0.0 0.0 0.4]
+  /Dest   [10 0 R /FitR 110 298 561 355]
+  /Parent 28 0 R
+  /Prev   29 0 R
+>>
+endobj
+28 0 obj
 <<
   /Title  (nets)
   /C      [0.0 0.4 0.0]
   /F      1
   /Parent 13 0 R
-  /First  27 0 R
-  /Last   29 0 R
-  /Count  3
-  /Prev   22 0 R
-  /Next   30 0 R
->>
-endobj
-31 0 obj
-<<
-  /Title  (@Wheel_Speed_L)
-  /C      [0.0 0.0 0.4]
-  /Dest   [10 0 R /FitR 376 303 471 303]
-  /Parent 30 0 R
-  /Next   32 0 R
+  /First  29 0 R
+  /Last   30 0 R
+  /Count  2
+  /Prev   24 0 R
+  /Next   31 0 R
 >>
 endobj
 32 0 obj
 <<
-  /Title  (@Wheel_Speed_R)
+  /Title  (@Servo_L)
   /C      [0.0 0.0 0.4]
-  /Dest   [10 0 R /FitR 376 294 471 294]
-  /Parent 30 0 R
-  /Prev   31 0 R
+  /Dest   [10 0 R /FitR 413 310 563 342]
+  /Parent 31 0 R
   /Next   33 0 R
 >>
 endobj
 33 0 obj
 <<
-  /Title  (@sensor)
+  /Title  (@Servo_R)
   /C      [0.0 0.0 0.4]
-  /Dest   [10 0 R /FitR 85 281 132 298]
-  /Parent 30 0 R
+  /Dest   [10 0 R /FitR 413 297 563 328]
+  /Parent 31 0 R
   /Prev   32 0 R
   /Next   34 0 R
 >>
 endobj
 34 0 obj
 <<
-  /Title  (@sensor)
+  /Title  (@led)
   /C      [0.0 0.0 0.4]
-  /Dest   [10 0 R /FitR 97 285 99 298]
-  /Parent 30 0 R
+  /Dest   [10 0 R /FitR 595 224 685 283]
+  /Parent 31 0 R
   /Prev   33 0 R
   /Next   35 0 R
 >>
 endobj
 35 0 obj
 <<
-  /Title  (@sensors_signal)
+  /Title  (@led)
   /C      [0.0 0.0 0.4]
-  /Dest   [10 0 R /FitR 169 284 249 284]
-  /Parent 30 0 R
+  /Dest   [10 0 R /FitR 665 230 668 285]
+  /Parent 31 0 R
   /Prev   34 0 R
   /Next   36 0 R
 >>
 endobj
 36 0 obj
 <<
-  /Title  (@servo_signal)
+  /Title  (@sensor)
   /C      [0.0 0.0 0.4]
-  /Dest   [10 0 R /FitR 229 245 602 322]
-  /Parent 30 0 R
+  /Dest   [10 0 R /FitR 111 252 145 311]
+  /Parent 31 0 R
   /Prev   35 0 R
   /Next   37 0 R
 >>
 endobj
 37 0 obj
 <<
-  /Title  (@servo_signal)
+  /Title  (@sensor)
   /C      [0.0 0.0 0.4]
-  /Dest   [10 0 R /FitR 548 317 553 321]
-  /Parent 30 0 R
+  /Dest   [10 0 R /FitR 129 258 131 312]
+  /Parent 31 0 R
   /Prev   36 0 R
   /Next   38 0 R
 >>
 endobj
 38 0 obj
 <<
-  /Title  (@servo_steering)
+  /Title  (@sensor_IBUF)
   /C      [0.0 0.0 0.4]
-  /Dest   [10 0 R /FitR 640 318 682 335]
-  /Parent 30 0 R
+  /Dest   [10 0 R /FitR 180 224 561 311]
+  /Parent 31 0 R
   /Prev   37 0 R
   /Next   39 0 R
 >>
 endobj
 39 0 obj
 <<
-  /Title  (@servo_steering)
+  /Title  (@sensor_IBUF)
   /C      [0.0 0.0 0.4]
-  /Dest   [10 0 R /FitR 669 322 670 336]
-  /Parent 30 0 R
+  /Dest   [10 0 R /FitR 264 230 484 312]
+  /Parent 31 0 R
   /Prev   38 0 R
+  /Next   40 0 R
 >>
 endobj
-30 0 obj
+40 0 obj
+<<
+  /Title  (@servo)
+  /C      [0.0 0.0 0.4]
+  /Dest   [10 0 R /FitR 665 341 668 361]
+  /Parent 31 0 R
+  /Prev   39 0 R
+  /Next   41 0 R
+>>
+endobj
+41 0 obj
+<<
+  /Title  (@servo)
+  /C      [0.0 0.0 0.4]
+  /Dest   [10 0 R /FitR 616 335 685 359]
+  /Parent 31 0 R
+  /Prev   40 0 R
+>>
+endobj
+31 0 obj
 <<
   /Title  (netBundles)
   /C      [0.0 0.4 0.0]
   /F      1
   /Parent 13 0 R
-  /First  31 0 R
-  /Last   39 0 R
-  /Count  9
-  /Prev   26 0 R
+  /First  32 0 R
+  /Last   41 0 R
+  /Count  10
+  /Prev   28 0 R
 >>
 endobj
 13 0 obj
@@ -1242,7 +1323,7 @@ endobj
   /Dest   [10 0 R /Fit]
   /Parent 7 0 R
   /First  14 0 R
-  /Last   30 0 R
+  /Last   31 0 R
   /Count  5
 >>
 endobj
@@ -1255,7 +1336,7 @@ endobj
   /Im0 12 0 R
 >>
 endobj
-40 0 obj
+42 0 obj
 <<
   /Type /XObject
   /Subtype /Image
@@ -1276,7 +1357,7 @@ endobj
   /BitsPerComponent 8
   /Width 44
   /Height 44
-  /SMask 40 0 R
+  /SMask 42 0 R
   /Length 5808
 >>
 stream
@@ -1291,54 +1372,56 @@ endobj
 >>
 endobj
 xref
-0 41
+0 43
 0000000000 65535 f 
 0000000009 00000 n 
 0000000207 00000 n 
-0000009377 00000 n 
+0000009640 00000 n 
 0000000357 00000 n 
 0000000484 00000 n 
-0000009496 00000 n 
-0000022157 00000 n 
-0000014018 00000 n 
-0000014039 00000 n 
+0000009759 00000 n 
+0000022729 00000 n 
+0000014590 00000 n 
+0000014611 00000 n 
 0000000694 00000 n 
 0000000837 00000 n 
-0000016172 00000 n 
-0000013860 00000 n 
-0000010413 00000 n 
-0000009762 00000 n 
-0000009917 00000 n 
-0000010087 00000 n 
-0000010257 00000 n 
-0000010855 00000 n 
-0000010573 00000 n 
-0000010714 00000 n 
-0000011484 00000 n 
+0000016744 00000 n 
+0000014432 00000 n 
 0000011028 00000 n 
-0000011172 00000 n 
-0000011344 00000 n 
-0000012092 00000 n 
-0000011661 00000 n 
-0000011803 00000 n 
-0000011956 00000 n 
-0000013699 00000 n 
-0000012264 00000 n 
-0000012412 00000 n 
-0000012577 00000 n 
-0000012734 00000 n 
-0000012890 00000 n 
-0000013056 00000 n 
-0000013220 00000 n 
-0000013384 00000 n 
-0000013550 00000 n 
-0000014074 00000 n 
+0000010025 00000 n 
+0000010180 00000 n 
+0000010352 00000 n 
+0000010522 00000 n 
+0000010695 00000 n 
+0000010870 00000 n 
+0000011472 00000 n 
+0000011188 00000 n 
+0000011330 00000 n 
+0000012097 00000 n 
+0000011645 00000 n 
+0000011789 00000 n 
+0000011951 00000 n 
+0000012548 00000 n 
+0000012274 00000 n 
+0000012411 00000 n 
+0000014270 00000 n 
+0000012720 00000 n 
+0000012862 00000 n 
+0000013021 00000 n 
+0000013176 00000 n 
+0000013331 00000 n 
+0000013489 00000 n 
+0000013647 00000 n 
+0000013810 00000 n 
+0000013973 00000 n 
+0000014130 00000 n 
+0000014646 00000 n 
 trailer
 <<
-  /Size 41
+  /Size 43
   /Info 1 0 R
   /Root 2 0 R
 >>
 startxref
-22239
+22811
 %%EOF
