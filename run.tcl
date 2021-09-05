@@ -41,15 +41,17 @@ read_xdc {
 
 read_verilog {
     src/main.v
-    src/servo_handler.v
-    src/input_control.v
-    src/PID_controller.v
+    #src/servo_handler.v
+    #src/input_control.v
+    #src/PID_controller.v
     src/servo_to_PWM.v
+    src/pid.v
 }
 #read_vhdl {}
 
 add_files -fileset sim_1 {
     sim/PWM_sim.v
+    sim/tb_pid.v
 }
 
 set_property top ${top_module} [current_fileset]

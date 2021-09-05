@@ -23,53 +23,38 @@
 module main(
     input wire clk,
     input wire rst,
-    input wire [1:0] sensor,
-    input wire [1:0] sw,
+    input wire [3:0] sensors,
+    // input wire [0:0] sw,
 
     output wire [1:0] servo_steering
     );
-    wire [1:0] sensors_signal;
-    wire [1:0] sensors_state;
-    wire [1:0] follower_state;
-    wire [7:0] Wheel_Speed_R;
-    wire [7:0] Wheel_Speed_L;
-    wire [7:0] servo_signal;
-    
-    
-localparam 
-    REST_STATE  = 2'b00,
-    LEFT_STATE  = 2'b01,
-    RIGHT_STATE = 2'b11;
+//  8=====================D
+wire kp_sw, ki_sw, kd_sw;
+wire signed [12:0] servo_signal;
 
-servo_handler my_servo (
+// servo_handler my_servo (
+//     .clk(clk),
+//     .rst(rst),
+//     .servo(servo_signal),
+//     .follower_state(follower_state),
+//     .Wheel_Speed_L(Wheel_Speed_L),
+//     .Wheel_Speed_R(Wheel_Speed_R)
+// );
+    
+pid my_PID(
     .clk(clk),
     .rst(rst),
-    .servo(servo_signal),
-    .follower_state(follower_state),
-    .Wheel_Speed_L(Wheel_Speed_L),
-    .Wheel_Speed_R(Wheel_Speed_R)
-);
-    
-PID_controller my_PID(
-    .sensors_signal(sensors_signal),
-    .follower_state(follower_state),
-    .servo_signal(servo_signal),
-    .Wheel_Speed_L(Wheel_Speed_L),
-    .Wheel_Speed_R(Wheel_Speed_R)
+    .sensors(sensors),
+    .kp_sw(kp_sw),
+    .ki_sw(ki_sw),
+    .kd_sw(kd_sw),
+    .pid_output(servo_signal)
  );
-    
-input_control my_in (
-    .a(sensor[0]),
-    .R_sensor(sensor[1]),
-    .sensors_signal(sensors_signal),
-    .follower_state(follower_state)
-);
-    
-    
+     
 servo_to_PWM my_PWM(
     .clk(clk),
     .rst(rst),
-    .servo_L(servo_signal),
+    .servo(servo_signal),
     .PWM_L(servo_steering[0]),
     .PWM_R(servo_steering[1])
 );

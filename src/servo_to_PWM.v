@@ -24,8 +24,8 @@
 module servo_to_PWM(
     input clk,
     input rst,
-    input  [10:0] servo_L,
-    input  [10:0] servo_R,
+    input  [12:0] servo,
+   //  input  [10:0] servo_R,
     output  reg PWM_L,
     output reg PWM_R
     );
