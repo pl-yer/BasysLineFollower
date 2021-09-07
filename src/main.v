@@ -29,12 +29,13 @@ module main(
     );
     wire [7:0] Servo_R;
     wire [7:0] Servo_L;
+    wire clk_state_machine;
      //   reg [9:0] a =155;       //down//132  /lewe
 
   //  reg [9:0] b =137;      //up   /171
 
 servo_handler my_servo (
-    .clk(clk),
+    .clk(clk_state_machine),
     .rst(rst),
     .sensors(sensor),
     .servo_l(Servo_L),
@@ -48,5 +49,9 @@ servo_to_PWM my_PWM(
     .PWM_L(servo[0]),
     .PWM_R(servo[1])
 );
+ frequency_divider my_divider(
+ .clk_100M(clk),
+ .clk_1K(clk_state_machine)
+ );
 assign led =sensor;
 endmodule
