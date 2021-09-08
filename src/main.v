@@ -23,54 +23,43 @@
 module main(
     input wire clk,
     input wire rst,
-    input wire [1:0] sensor,
-    input wire [1:0] sw,
-
-    output wire [1:0] servo_steering
+    input wire [3:0] sensor,
+    input wire [2:0] sw,
+    output wire [1:0] servo
     );
-    wire [1:0] sensors_signal;
-    wire [1:0] sensors_state;
-    wire [1:0] follower_state;
-    wire [7:0] Wheel_Speed_R;
-    wire [7:0] Wheel_Speed_L;
-    wire [7:0] servo_signal;
-    
-    
-localparam 
-    REST_STATE  = 2'b00,
-    LEFT_STATE  = 2'b01,
-    RIGHT_STATE = 2'b11;
+    wire [7:0] Servo_R;
+    wire [7:0] Servo_L;
+    wire clk_state_machine;
+    wire [12:0] pid_output;
 
 servo_handler my_servo (
-    .clk(clk),
+    .clk(clk_state_machine),
     .rst(rst),
-    .servo(servo_signal),
-    .follower_state(follower_state),
-    .Wheel_Speed_L(Wheel_Speed_L),
-    .Wheel_Speed_R(Wheel_Speed_R)
-);
-    
-PID_controller my_PID(
-    .sensors_signal(sensors_signal),
-    .follower_state(follower_state),
-    .servo_signal(servo_signal),
-    .Wheel_Speed_L(Wheel_Speed_L),
-    .Wheel_Speed_R(Wheel_Speed_R)
- );
-    
-input_control my_in (
-    .a(sensor[0]),
-    .R_sensor(sensor[1]),
-    .sensors_signal(sensors_signal),
-    .follower_state(follower_state)
-);
-    
-    
+    .sensors(sensor),
+    .servo_l(Servo_L),
+    .servo_r(Servo_R),
+    .pid_output(pid_output)
+);       
 servo_to_PWM my_PWM(
     .clk(clk),
     .rst(rst),
-    .servo_L(servo_signal),
-    .PWM_L(servo_steering[0]),
-    .PWM_R(servo_steering[1])
+    .servo_L(Servo_L),
+    .servo_R(Servo_R),
+    .PWM_L(servo[0]),
+    .PWM_R(servo[1])
 );
+ frequency_divider my_divider(
+ .clk_100M(clk),
+ .clk_1K(clk_state_machine)
+ );
+ 
+ pid my_pid(
+ .kp_sw(sw[0]),
+ .ki_sw(sw[1]),
+ .kd_sw(sw[2]),
+ .clk(clk),
+ .rst(rst),
+ .sensors(sensor),
+ .pid_output(pid_output)
+ );
 endmodule

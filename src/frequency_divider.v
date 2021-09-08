@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 13.08.2021 19:57:15
+// Create Date: 06.09.2021 17:35:17
 // Design Name: 
-// Module Name: PID_controler
+// Module Name: frequency_divider
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,14 +20,19 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module PID_controller(
-input wire [1:0] sensors_signal,
-input wire [1:0] follower_state,
-input wire rst,
-input wire clk,
-input wire [7:0] servo_signal,
-output reg [1:0] steer_signal,
-output reg [7:0] Wheel_Speed_R,
-output reg [7:0] Wheel_Speed_L
+module frequency_divider(
+    input clk_100M,
+    output reg clk_1K
     );
+    reg [16:0] counter;
+    always@(posedge clk_100M) begin
+        counter =counter+1;
+        if(counter>100000) begin
+            clk_1K = !clk_1K;
+            counter=0;
+        end
+        else begin
+            clk_1K=clk_1K;
+    end
+    end
 endmodule

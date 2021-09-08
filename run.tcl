@@ -42,9 +42,9 @@ read_xdc {
 read_verilog {
     src/main.v
     src/servo_handler.v
-    src/input_control.v
-    src/PID_controller.v
     src/servo_to_PWM.v
+    src/frequency_divider.v
+    src/pid.v
 }
 #read_vhdl {}
 
