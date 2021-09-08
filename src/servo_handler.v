@@ -23,10 +23,10 @@
 module servo_handler(
     input  wire clk,
     input  wire rst,
+    input  wire [10:0] pid_output,
     input  wire [1:0] sensors,
     output reg  [7:0] servo_l,
-    output reg  [7:0] servo_r,
-    input  wire [12:0]  pid_output
+    output reg  [7:0] servo_r
     );
 
 reg [7:0] servo_l_nxt;

@@ -50,6 +50,7 @@ read_verilog {
 
 add_files -fileset sim_1 {
     sim/PWM_sim.v
+    sim/tb_pid.v
 }
 
 set_property top ${top_module} [current_fileset]

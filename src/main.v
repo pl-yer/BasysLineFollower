@@ -27,10 +27,11 @@ module main(
     input wire [2:0] sw,
     output wire [1:0] servo
     );
-    wire [7:0] Servo_R;
-    wire [7:0] Servo_L;
-    wire clk_state_machine;
-    wire [12:0] pid_output;
+    
+wire [7:0] Servo_R;
+wire [7:0] Servo_L;
+wire clk_state_machine;
+wire [10:0] pid_output;
 
 servo_handler my_servo (
     .clk(clk_state_machine),
@@ -40,6 +41,7 @@ servo_handler my_servo (
     .servo_r(Servo_R),
     .pid_output(pid_output)
 );       
+
 servo_to_PWM my_PWM(
     .clk(clk),
     .rst(rst),
@@ -48,12 +50,13 @@ servo_to_PWM my_PWM(
     .PWM_L(servo[0]),
     .PWM_R(servo[1])
 );
+
  frequency_divider my_divider(
  .clk_100M(clk),
  .clk_1K(clk_state_machine)
  );
  
- pid my_pid(
+pid my_pid(
  .kp_sw(sw[0]),
  .ki_sw(sw[1]),
  .kd_sw(sw[2]),
