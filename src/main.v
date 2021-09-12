@@ -36,7 +36,6 @@ wire [10:0] pid_output;
 servo_handler my_servo (
     .clk(clk_state_machine),
     .rst(rst),
-    .sensors(sensor),
     .servo_l(Servo_L),
     .servo_r(Servo_R),
     .pid_output(pid_output)
@@ -51,18 +50,24 @@ servo_to_PWM my_PWM(
     .PWM_R(servo[1])
 );
 
- frequency_divider my_divider(
- .clk_100M(clk),
- .clk_1K(clk_state_machine)
+frequency_divider 
+#(
+    .freq(1000)
+)    
+my_divider(
+    .clk100MHz(clk),
+    .rst(rst),
+    .clk_div(clk_state_machine)
  );
  
 pid my_pid(
- .kp_sw(sw[0]),
- .ki_sw(sw[1]),
- .kd_sw(sw[2]),
- .clk(clk),
- .rst(rst),
- .sensors(sensor),
- .pid_output(pid_output)
+    .kp_sw(sw[0]),
+    .ki_sw(sw[1]),
+    .kd_sw(sw[2]),
+    .clk(clk),
+    .rst(rst),
+    .sensors(sensor),
+    .pid_output(pid_output)
  );
+
 endmodule

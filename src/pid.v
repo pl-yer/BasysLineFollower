@@ -4,8 +4,7 @@ module pid(
     input wire clk,
     input wire rst,
     input wire [3:0] sensors,
-    input wire kp_sw, ki_sw, kd_sw, // determines if p, i, d will be calculated
-    //output reg [6:0] motor_signal
+    input wire kp_sw, ki_sw, kd_sw, // determines if p, i and d will be calculated
     output reg [10:0] pid_output
     );
 
@@ -27,7 +26,7 @@ localparam
 
 always @(posedge clk) begin
     if(rst) begin
-        position      <= 500;
+        position      <= 0;
         position_prev <= 0;
         error         <= 0;
         error_sum     <= 0;
@@ -75,7 +74,7 @@ always @(*) begin
     4'b1101:    position_nxt = 375;
     4'b0001:    position_nxt = 666;
     4'b1000:    position_nxt = 333;
-    default:    position_nxt = 500;   // error case        
+    default:    position_nxt = 1023;   // error case        
 endcase
 end
 
@@ -89,14 +88,10 @@ always @(*) begin
     i_nxt = ki_sw ? (K_I * error_sum_nxt)/(TIME_DIV * K_I_DEN) : 0;
     d_nxt = kd_sw ? (K_D * error_dif_nxt * TIME_DIV)/K_D_DEN : 0;
 
-    output_buf = p + i + d + 500;
+    output_buf_nxt = p + i + d + 500;
     if(output_buf < 0) output_loaded_nxt = 0;
     else if(output_buf > 1000) output_loaded_nxt = 0;
     else output_loaded_nxt = output_buf;
-end
-
-always @(*) begin
-    
 end
     
 endmodule
