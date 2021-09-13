@@ -8,7 +8,6 @@ module pid(
     output reg [10:0] pid_output
     );
 
-reg [10:0] position_prev;
 reg signed [10:0] error, error_nxt, error_sum, error_sum_nxt, error_dif, error_dif_nxt, error_prev;
 reg signed [12:0] p, p_nxt, i, i_nxt, d, d_nxt;
 reg signed [10:0] output_loaded_nxt, output_buf, output_buf_nxt;
@@ -20,13 +19,10 @@ localparam
     K_I_DEN  = 100,
     K_D      = 1,
     K_D_DEN  = 200,
-    TIME_DIV = 100,
-    
-    BASE_SPEED = 1;
+    TIME_DIV = 100;
 
 always @(posedge clk) begin
     if(rst) begin
-        position_prev <= 0;
         error         <= 0;
         error_sum     <= 0;
         error_dif     <= 0;
@@ -38,7 +34,6 @@ always @(posedge clk) begin
         pid_output    <= 0;
     end
     else begin 
-        position_prev <= position;
         error         <= error_nxt;
         error_sum     <= error_sum_nxt;
         error_dif     <= error_dif_nxt;
