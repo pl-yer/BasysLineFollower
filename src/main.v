@@ -30,11 +30,13 @@ module main(
     
 wire [7:0] Servo_R;
 wire [7:0] Servo_L;
-wire clk_state_machine;
+wire clk_40MHz;
+wire clk_1KHz;
+wire clk_100MHz;
 wire [10:0] pid_output, position;
 
 servo_handler my_servo (
-    .clk(clk_state_machine),
+    .clk(clk_1KHz),
     .rst(rst),
     .servo_l(Servo_L),
     .servo_r(Servo_R),
@@ -42,46 +44,34 @@ servo_handler my_servo (
 );       
 
 servo_to_PWM my_PWM(
-    .clk(clk),
+    .clk(clk_100MHz),
     .rst(rst),
     .servo_L(Servo_L),
     .servo_R(Servo_R),
     .PWM_L(servo[0]),
     .PWM_R(servo[1])
 );
-
-frequency_divider 
-#(
-    .freq(1000)
-)    
-my_1K_divider(
-    .clk100MHz(clk),
-    .rst(rst),
-    .clk_div(clk_state_machine)
+clock_managment_unit my_clk(
+.clk(clk),
+.rst(rst),
+.clk_100MHz(clk_100MHz),
+.clk_40MHz(clk_40MHz),
+.clk_1KHz(clk_1KHz)
 );
 
-frequency_divider 
-#(
-    .freq(40000000)
-)    
-my_40M_divider(
-    .clk100MHz(clk),
-    .rst(rst),
-    .clk_div(clk40MHz)
-);
- 
+
 pid my_pid(
     .kp_sw(sw[0]),
     .ki_sw(sw[1]),
     .kd_sw(sw[2]),
-    .clk(clk40MHz),
+    .clk(clk_40MHz),
     .rst(rst),
     .position(position),
     .pid_output(pid_output)
 );
 
 sensor_handler my_sensors(
-    .clk(clk),
+    .clk(clk_100MHz),
     .rst(rst),
     .sensors(sensor),
     .position(position)

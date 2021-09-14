@@ -46,6 +46,7 @@ read_verilog {
     src/frequency_divider.v
     src/pid.v
     src/sensor_handler.v
+    src/clock_managment_unit.v
 }
 #read_vhdl {}
 
