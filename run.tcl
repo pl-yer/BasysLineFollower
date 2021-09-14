@@ -47,8 +47,11 @@ read_verilog {
     src/pid.v
     src/sensor_handler.v
     src/clock_managment_unit.v
+    src/ip/cmpy_0_stub.v
 }
-#read_vhdl {}
+read_vhdl {
+    src/ip/cmpy_0_stub.vhdl
+}
 
 add_files -fileset sim_1 {
     sim/PWM_sim.v
