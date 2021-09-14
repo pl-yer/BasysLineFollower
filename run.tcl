@@ -45,6 +45,7 @@ read_verilog {
     src/servo_to_PWM.v
     src/frequency_divider.v
     src/pid.v
+    src/sensor_handler.v
 }
 #read_vhdl {}
 

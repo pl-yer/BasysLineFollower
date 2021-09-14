@@ -5,7 +5,15 @@ module tb_pid;
   reg clk;
   reg rst, kp_sw, ki_sw, kd_sw;
   reg [3:0] ir_sensors;
-  wire [12:0] pid_output;
+  wire [10:0] pid_output;
+  wire [10:0] position;
+
+  sensor_handler my_sensors (
+    .clk(clk),
+    .rst(rst),
+    .sensors(ir_sensors),
+    .position(position)
+  );
   
   pid  my_pid (
     .clk(clk),
@@ -13,7 +21,7 @@ module tb_pid;
     .kp_sw(kp_sw),
     .ki_sw(ki_sw),
     .kd_sw(kd_sw),
-    .sensors(ir_sensors),
+    .position(position),
     .pid_output(pid_output)
   );
 
@@ -31,7 +39,7 @@ module tb_pid;
     ki_sw = 1;
     kd_sw = 1;
     ir_sensors = 4'b1001;
-    // Reset check
+  
     rst = 0;
     #2000;
     rst = 1;
@@ -57,6 +65,11 @@ module tb_pid;
     ir_sensors = 4'b0000;
     #100
     ir_sensors = 4'b1001;
+    #100 
+    ir_sensors = 4'b1111;
+    #100
+    ir_sensors = 4'b1101;
+    #100
     
     $display("Simulation is over, check the waveforms.");
     $stop;
