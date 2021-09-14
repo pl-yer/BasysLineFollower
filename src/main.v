@@ -51,6 +51,7 @@ servo_to_PWM my_PWM(
     .PWM_L(servo[0]),
     .PWM_R(servo[1])
 );
+
 clock_managment_unit my_clk(
 .clk(clk),
 .rst(rst),
@@ -58,7 +59,6 @@ clock_managment_unit my_clk(
 .clk_40MHz(clk_40MHz),
 .clk_1KHz(clk_1KHz)
 );
-
 
 pid my_pid(
     .kp_sw(sw[0]),
